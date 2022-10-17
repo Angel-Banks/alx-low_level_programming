@@ -1,51 +1,37 @@
 #include <stdio.h>
 
-#include <stdlib.h>
-
-
-
-
-
 /**
+ * *main - prints all possible combinations of single-digit numbers
  *
- *  * main- Write a program that prints all possible
+ * *Return: Always 0 (Success)
  *
- *   * combinations of single-digit numbers
- *
- *    * Return: 0 (success)
- *
- *     */
-
-
+ */
 
 int main(void)
-
 {
 
-		int d;
+	int n;
+
+	for (n = 48; n < 58; n++)
+
+	{
+
+		putchar(n);
+
+		if (n != 57)
+
+		{
+
+			putchar(',');
+
+			putchar(' ');
 
 
+		}
 
-			for (d = '0'; d <= '9'; d++)
+	}
 
-					{
+	putchar('\n');
 
-								putchar(d);
-
-										if (d != '9')
-
-													{
-
-																	putchar(',');
-
-																				putchar(' ');
-
-																						}
-
-											}
-
-				putchar('\n');
-
-					return (0);
-
+	return (0);
 }
