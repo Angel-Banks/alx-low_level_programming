@@ -2,104 +2,52 @@
 
 
 
-
-
-
-
 /**
+ *main - prints all possible different combinations of two digits
  *
- *  *  * main - prints all possible different combinations of two digits
- *
- *   *
- *
- *    *   * Return: ALways 0 (Success)
- *
- *     *
- *
- *      */
-
-
+ *Return: ALways 0 (Success)
+ */
 
 int main(void)
 
-
-
 {
 
+	int n, m;
 
+	for (n = 48; n <= 56; n++)
 
-		int n, m;
+	{
 
+		for (m = 49; m <= 57; m++)
 
+		{
 
+			if (m > n)
 
+			{
 
-			for (n = 48; n <= 56; n++)
+				putchar(n);
 
+				putchar(m);
 
+				if (n != 56 || m != 57)
 
-					{
+				{
 
+					putchar(',');
 
+					putchar(' ');
 
-								for (m = 49; m <= 57; m++)
+				}
 
+			}
 
+		}
 
-											{
+	}
 
+	putchar('\n');
 
-
-															if (m > n)
-
-
-
-																			{
-
-
-
-																								putchar(n);
-
-
-
-																												putchar(m);
-
-
-
-																																	if (n != 56 || m != 57)
-
-
-
-																																							{
-
-
-
-																																														putchar(',');
-
-																																																				putchar(' ');
-
-																																																									}
-
-
-
-																																				}
-
-
-
-																	}
-
-
-
-									}
-
-
-
-				putchar('\n');
-
-
-
-					return (0);
-
-
+	return (0);
 
 }
