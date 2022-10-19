@@ -32,6 +32,8 @@ int add(int, int)
 
 void num(int r, int n);
 
+void times_table(void);
+
 
 
 #endif
